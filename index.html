@@ -890,7 +890,7 @@
             </div>
           </div>
           <div class="main-img-container">
-            <img src="assets/images/harris_logo2.jpg" class="img-fluid main-img" alt="">
+            <img src="assets/images/harris_logo2.jpg" id="logo" class="img-fluid main-img" alt="">
           </div>
         </div>
 
@@ -941,7 +941,7 @@
         <button class="nav-link  tab-btn" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
           type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Skills</button>
       </li>
-      
+
       <li class="nav-item" role="presentation">
         <button class="nav-link tab-btn" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
           type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Certificates</button>
@@ -1701,6 +1701,10 @@ window.onload = function(){
         $('#imagePopupModal').modal('show');
       });
     });
+
+    document.getElementById("logo").addEventListener("contextmenu",function(event){
+      event.preventDefault()
+    })
   </script>
 </body>
 
