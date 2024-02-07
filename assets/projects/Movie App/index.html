@@ -1440,17 +1440,17 @@
 
 <script>
 
-document.addEventListener('DOMContentLoaded', function(){
+window.onload =  function(){
     document.getElementById('preloader').style.display = 'none';
     document.getElementById('whole-content').style.display = 'block';
-});
+};
 
 
     $('.owl-carousel').owlCarousel({
         loop: true,
         responsiveClass: true,
         margin: 7,
-        center:true,
+        center:true,    
         autoplay:true,
         autoplayTimeout:3000,
         autoplayHoverPause:true,
