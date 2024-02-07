@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="assets/css/netflix.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+    <title>HrzFlix</title>
+
+
+</head>
+
+<body style="overflow-x: hidden;">
+
+    <div class="preloader-container" id="preloader">
+        <div class="loader"></div>
+        <img src="assets/images/hrzflix.png" style="filter: brightness(1);" width="150px" alt="">
+    </div>
+
+    <div id="whole-content" style="display: none;">
+        <div id="homes" class="netflix_home">
+            <header class="container-fluid">
+                <div>
+                    <header class="header">
+    
+                        <div class="head">
+                            <img src="assets/images/hrzflix.png" width="150px" style="filter: brightness(2);" alt="">
+    
+                        </div>
+    
+                        <div class="head1">
+                            <ul class="nav-menu">
+                                <li>
+                                    <a href="#homes" class="nav-item">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#animes" class="nav-item">Animes</a>
+                                </li>
+                                <li>
+                                    <a href="#series" class="nav-item">Series</a>
+                                </li>
+                                <li>
+                                    <a href="#movies" class="nav-item">Movies</a>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <div class="head2">
+                            <div class="dropdown ">
+                                <a class="btn btn-sm eng ml-2 " href="#Subscribe" id="dropdownMenuLink">
+                                    Subscribe
+                                </a>
+                                <a href="contact.html" class="btn si btn-sm ml-2">Sign in</a>
+                            </div>
+    
+                        </div>
+                    </header>
+                </div>
+            </header>
+    
+            <div id="carouselExampleFade" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active hero">
+                        <div class="hero-section">
+                            <img src="assets/images/Hero/wanda-banner.jpg" alt="">
+                        </div>
+                        <div class="hero-wrapper">
+                            <div class="hero-content">
+                                <div class="hero-title">
+                                    <h2>Wanda Vision</h2>
+                                </div>
+                                <div class="hero-info">
+                                    <span class="d-flex ">
+                                        <iconify-icon style="color:yellow;" class="stars" icon="ic:round-star">
+                                        </iconify-icon>9.5
+                                    </span>
+                                    <span class="d-flex">
+                                        <iconify-icon icon="mingcute:time-line" class="stars " style="color:white">
+                                        </iconify-icon>180 mins
+                                    </span>
+                                    <span>UHD</span>
+                                    <span>16+</span>
+                                </div>
+                                <div class="hero-des">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa voluptas excepturi
+                                    molestiae facere assumenda.
+                                </div>
+                                <div class="hero-btn d-flex gap-2">
+                                    <button class="btn watch-now d-flex" style="border: 2px solid red;">Play Now </button>
+                                    <button class="btn watch-now d-flex" style="border: 2px solid white;">Watch
+                                        Later</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="carousel-item hero">
+                        <div class="hero-section">
+                            <img src="assets/images/Hero/jujutsu.jpg" alt="">
+                        </div>
+                        <div class="hero-wrapper">
+                            <div class="hero-content">
+                                <div class="hero-title">
+                                    <h2>Jujutsu Kaisen</h2>
+                                </div>
+                                <div class="hero-info">
+                                    <span class="d-flex">
+                                        <iconify-icon style="color:yellow;" class="stars" icon="ic:round-star">
+                                        </iconify-icon>7.5
+                                    </span>
+                                    <span class="d-flex">
+                                        <iconify-icon icon="mingcute:time-line" class="stars " style="color:white">
+                                        </iconify-icon>120 mins
+                                    </span>
+                                    <span>HD</span>
+                                    <span>16+</span>
+                                </div>
+                                <div class="hero-des">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa voluptas excepturi
+                                    molestiae facere assumenda.
+                                </div>
+                                <div class="hero-btn d-flex gap-2">
+                                    <button class="btn watch-now d-flex" style="border: 2px solid red;">Play Now </button>
+                                    <button class="btn watch-now d-flex" style="border: 2px solid white;">Watch
+                                        Later</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="carousel-item hero">
+                        <div class="hero-section">
+                            <img src="assets/images/Hero/infinity.jpg" alt="">
+                        </div>
+                        <div class="hero-wrapper">
+                            <div class="hero-content">
+                                <div class="hero-title">
+                                    <h2>Infinity War</h2>
+                                </div>
+                                <div class="hero-info">
+                                    <span class="d-flex ">
+                                        <iconify-icon style="color:yellow;" class="stars" icon="ic:round-star">
+                                        </iconify-icon>8.5
+                                    </span>
+                                    <span class="d-flex">
+                                        <iconify-icon icon="mingcute:time-line" class="stars " style="color:white">
+                                        </iconify-icon>180 mins
+                                    </span>
+                                    <span>HD</span>
+                                    <span>16+</span>
+                                </div>
+                                <div class="hero-des">
+                                    Ipsa voluptas excepturi molestiae facere assumenda, veniam dolores. Minus nobis earum
+                                    omnis.
+                                </div>
+                                <div class="hero-btn d-flex gap-2">
+                                    <button class="btn watch-now d-flex" style="border: 2px solid red;">Play Now </button>
+                                    <button class="btn watch-now d-flex" style="border: 2px solid white;">Watch
+                                        Later</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="carousel-item hero">
+                        <div class="hero-section">
+                            <img src="assets/images/Hero/luffy.jpg" alt="">
+                        </div>
+                        <div class="hero-wrapper">
+                            <div class="hero-content">
+                                <div class="hero-title">
+                                    <h2>One Piece</h2>
+                                </div>
+                                <div class="hero-info">
+                                    <span class="d-flex ">
+                                        <iconify-icon style="color:yellow;" class="stars" icon="ic:round-star">
+                                        </iconify-icon>8.5
+                                    </span>
+                                    <span class="d-flex">
+                                        <iconify-icon icon="mingcute:time-line" class="stars " style="color:white">
+                                        </iconify-icon>180 mins
+                                    </span>
+                                    <span>HD</span>
+                                    <span>16+</span>
+                                </div>
+                                <div class="hero-des">
+                                    Ipsa voluptas excepturi molestiae facere assumenda, veniam dolores. Minus nobis earum
+                                    omnis.
+                                </div>
+                                <div class="hero-btn d-flex gap-2">
+                                    <button class="btn watch-now d-flex" style="border: 2px solid red;">Play Now </button>
+                                    <button class="btn watch-now d-flex" style="border: 2px solid white;">Watch
+                                        Later</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    
+    
+        <div class="owl-carousel">
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Movies/end-game.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Endgame </h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Movies/transformer.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Transformer</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Movies/spiderman.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Spiderman</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Movies/call.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Call</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Movies/captain-marvel.png" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Captain Marvel</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Movies/hunter-killer.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Hunter Killer</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    
+        <div class="recently-watched">
+            <span class="text-white">Recently Watched</span>
+        </div>
+        <div class="owl-carousel mt-4">
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Series/berlin.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Berlin </h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Anime/stone.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Dr stone</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Movies/bat-man.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Batman</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Series/dark.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Dark</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Anime/your-name.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Your Name</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Movies/insidious.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Insidious</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    
+        <div id="animes" class="recently-watched">
+            <span class="text-white">Top Animes</span>
+        </div>
+        <div class="owl-carousel mt-4">
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Anime/tokyo.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Tokyo Revengers</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Anime/demon-slayer.jpg" alt="">
+                </div>            
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Demon Slayer</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Anime/titan.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Attack on Titan</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Anime/death.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Death Note</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Anime/stone.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Dr Stone</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Anime/dragon.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Dragon Ball</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Anime/your-name.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Your Name</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Anime/weathering.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Weathering with You</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Anime/croods.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Croods</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Anime/coco.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Coco</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Anime/over-the-moon.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Over the Moon</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    
+    
+        <div id="carouselExampleFade2" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active hero">
+                    <div class="hero-section">
+                        <img src="assets/images/Hero/heist.jpg" alt="">
+                    </div>
+                    <div class="hero-wrapper">
+                        <div class="hero-content">
+                            <div class="hero-title">
+                                <h2>Money Heist</h2>
+                            </div>
+                            <div class="hero-info">
+                                <span class="d-flex ">
+                                    <iconify-icon style="color:yellow;" class="stars" icon="ic:round-star">
+                                    </iconify-icon>9.5
+                                </span>
+                                <span class="d-flex">
+                                    <iconify-icon icon="mingcute:time-line" class="stars " style="color:white">
+                                    </iconify-icon>180 mins
+                                </span>
+                                <span>UHD</span>
+                                <span>16+</span>
+                            </div>
+                            <div class="hero-des">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa voluptas excepturi
+                                molestiae facere assumenda.
+                            </div>
+                            <div class="hero-btn d-flex gap-2">
+                                <button class="btn watch-now d-flex" style="border: 2px solid red;">Play Now </button>
+                                <button class="btn watch-now d-flex" style="border: 2px solid white;">Watch Later</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="carousel-item hero">
+                    <div class="hero-section">
+                        <img src="assets/images/Hero/kuroko.jpg" alt="">
+                    </div>
+                    <div class="hero-wrapper">
+                        <div class="hero-content">
+                            <div class="hero-title">
+                                <h2>Kuroko's Basketball</h2>
+                            </div>
+                            <div class="hero-info">
+                                <span class="d-flex">
+                                    <iconify-icon style="color:yellow;" class="stars" icon="ic:round-star">
+                                    </iconify-icon>7.5
+                                </span>
+                                <span class="d-flex">
+                                    <iconify-icon icon="mingcute:time-line" class="stars " style="color:white">
+                                    </iconify-icon>120 mins
+                                </span>
+                                <span>HD</span>
+                                <span>16+</span>
+                            </div>
+                            <div class="hero-des">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa voluptas excepturi
+                                molestiae facere assumenda.
+                            </div>
+                            <div class="hero-btn d-flex gap-2">
+                                <button class="btn watch-now d-flex" style="border: 2px solid red;">Play Now </button>
+                                <button class="btn watch-now d-flex" style="border: 2px solid white;">Watch Later</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="carousel-item hero">
+                    <div class="hero-section">
+                        <img src="assets/images/Hero/transformer-banner.jpg" alt="">
+                    </div>
+                    <div class="hero-wrapper">
+                        <div class="hero-content">
+                            <div class="hero-title">
+                                <h2>Transformer</h2>
+                            </div>
+                            <div class="hero-info">
+                                <span class="d-flex ">
+                                    <iconify-icon style="color:yellow;" class="stars" icon="ic:round-star">
+                                    </iconify-icon>8.5
+                                </span>
+                                <span class="d-flex">
+                                    <iconify-icon icon="mingcute:time-line" class="stars " style="color:white">
+                                    </iconify-icon>180 mins
+                                </span>
+                                <span>HD</span>
+                                <span>16+</span>
+                            </div>
+                            <div class="hero-des">
+                                Ipsa voluptas excepturi molestiae facere assumenda, veniam dolores. Minus nobis earum
+                                omnis.
+                            </div>
+                            <div class="hero-btn d-flex gap-2">
+                                <button class="btn watch-now d-flex" style="border: 2px solid red;">Play Now </button>
+                                <button class="btn watch-now d-flex" style="border: 2px solid white;">Watch Later</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="carousel-item hero">
+                    <div class="hero-section">
+                        <img src="assets/images/Hero/supergirl-banner.jpg" alt="">
+                    </div>
+                    <div class="hero-wrapper">
+                        <div class="hero-content">
+                            <div class="hero-title">
+                                <h2>Super Girl</h2>
+                            </div>
+                            <div class="hero-info">
+                                <span class="d-flex ">
+                                    <iconify-icon style="color:yellow;" class="stars" icon="ic:round-star">
+                                    </iconify-icon>8.5
+                                </span>
+                                <span class="d-flex">
+                                    <iconify-icon icon="mingcute:time-line" class="stars " style="color:white">
+                                    </iconify-icon>180 mins
+                                </span>
+                                <span>HD</span>
+                                <span>16+</span>
+                            </div>
+                            <div class="hero-des">
+                                Ipsa voluptas excepturi molestiae facere assumenda, veniam dolores. Minus nobis earum
+                                omnis.
+                            </div>
+                            <div class="hero-btn d-flex gap-2">
+                                <button class="btn watch-now d-flex" style="border: 2px solid red;">Play Now </button>
+                                <button class="btn watch-now d-flex" style="border: 2px solid white;">Watch Later</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    
+        <div id="series" class="recently-watched mt-4">
+            <span class="text-white">Epic Series</span>
+        </div>
+        <div class="owl-carousel mt-4">
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Series/peaky.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Peaky Blinders</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Series/wednesday.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Wednesday</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Series/heist.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Money Heist</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Series/dark.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Dark</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Series/mandalorian.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Mandalorian</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Series/blood-shot.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Blood Shot</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Series/stranger.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Stranger Things</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Series/star-trek.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Start Trek</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Series/supergirl.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Supergirl</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Series/start-trek.jpeg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Start Trek 2</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    
+        <div id="movies" class="recently-watched ">
+            <span class="text-white">Trending Movies</span>
+        </div>
+        <div class="owl-carousel mt-4">
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Movies/bat-man.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Dark Knight</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Movies/spiderman.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>No Way Home</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Movies/end-game.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>End Game</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Movies/call.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Call</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Movies/love-roise.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Love Roise</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Movies/captain-marvel.png" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Captain Marvel</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Movies/hunter-killer.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Hunter Killer</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Movies/insidious.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Insidious</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Movies/theatre-dead.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Theatre Dead</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="movies-img">
+                <div class="movie-container">
+                    <img src="assets/images/Movies/transformer.jpg" alt="">
+                </div>
+                <div class="movies-wrapper">
+                    <div class="movies-content">
+                        <div class="movies-title">
+                            <h2>Transformer</h2>
+                        </div>
+                        <div class="movies-info">
+                            <span class="d-flex ">8.5</span>
+                            <span class="d-flex">180 mins</span>
+                            <span>HD</span>
+                            <span>16+</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    
+        <!-- Subscription Section -->
+        <div id="Subscribe" class="recently-watched mt-4">
+            <span class="text-white">Subscription</span>
+        </div>
+    
+        <div class="container-fluid subscription-container ">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12 basic">
+                    <div class="card subscription-card">
+                        <div class="subscription-rate ">
+                            <div>
+                                Basic
+                            </div>
+                            <div style="font-weight: 600;">
+                                Free
+                            </div>
+                        </div>
+    
+                        <div class="subscription-details">
+                            <div class="subscription-content">
+                                <ul>
+                                    <li>HRZ Flix Originals</li>
+                                    <li>Swithch plans or cancel anytime</li>
+                                    <li style="text-decoration: line-through;">Stream 65+ top Live</li>
+                                    <li style="text-decoration: line-through;">TV Channels</li>
+                                </ul>
+                            </div>
+    
+                            <div class="subscription-btn">
+                                <button class="btn btn-danger register-now">Register Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6  col-sm-6 col-12 premium">
+                    <div class="card subscription-card">
+                        <div class="subscription-rate ">
+                            <div>
+                                Premium
+                            </div>
+                            <div style="font-weight: 600;">
+                                $35.99 <span class="text-secondary">/month</span>
+                            </div>
+                        </div>
+    
+                        <div class="subscription-details">
+                            <div class="subscription-content">
+                                <ul>
+                                    <li>HRZ Flix Originals</li>
+                                    <li>Swithch plans or cancel anytime</li>
+                                    <li>Stream 65+ top Live</li>
+                                    <li style="text-decoration: line-through;">TV Channels</li>
+                                </ul>
+                            </div>
+    
+                            <div class="subscription-btn">
+                                <button class="btn btn-danger register-now">Register Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12 vvp">
+                    <div class="card subscription-card">
+                        <div class="subscription-rate ">
+                            <div>
+                                VVIP
+                            </div>
+                            <div style="font-weight: 600;">
+                                $55.99 <span class="text-secondary">/month</span>
+                            </div>
+                        </div>
+    
+                        <div class="subscription-details">
+                            <div class="subscription-content">
+                                <ul>
+                                    <li>HRZ Flix Originals</li>
+                                    <li>Swithch plans or cancel anytime</li>
+                                    <li>Stream 65+ top Live</li>
+                                    <li>TV Channels</li>
+                                </ul>
+                            </div>
+    
+                            <div class="subscription-btn">
+                                <button class="btn btn-danger register-now">Register Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Footer  -->
+    
+        <div class="container-fluid footer-container">
+            <div class="row footer-card">
+    
+    
+                <div class="col-lg-4 col-md-12 col-sm-12 col-12 m3">
+    
+                    <ul>
+                        <li><a href=""><img src="assets/images/hrzflix.png" class="footer-img" alt=""></a></li>
+                        <li class="mt-4"><a href="">HrxFlix is a Movie Popular Movie App with Tons of offers and Feature
+                            </a></li>
+                        <div class="d-flex gap-1 mt-2">
+                            <li><a href=""><i class="fa-brands pe-2 fa-xl fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa-brands pe-2 fa-xl fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fa-brands pe-2 fa-xl fa-twitter"></i></a></li>
+                        </div>
+                    </ul>
+    
+                </div>
+    
+                <div class="col-lg-2 col-md-3 col-sm-3 col-6  m3 m4">
+    
+                    <ul>
+                        <li style="font-weight: 700;"><a href="">Flix</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">My Profile</a></li>
+                        <li><a href="#Subscribe">Pricing Plans</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+    
+                </div>
+    
+                <div class="col-lg-2 col-md-3 col-sm-3 col-6 m3 m4">
+    
+                    <ul>
+                        <li style="font-weight: 700;"><a href="">Browse</a></li>
+                        <li><a href="#animes">Live Animes</a></li>
+                        <li><a href="#movies">Live Movies</a></li>
+                        <li><a href="#series">Live Series</a></li>
+                    </ul>
+    
+                </div>
+    
+                <div class="col-lg-2 col-md-3 col-sm-3 col-6 m3 m4">
+    
+                    <ul>
+                        <li style="font-weight: 700;"><a href="">Help</a></li>
+                        <li><a href="#">Account & Billing</a></li>
+                        <li><a href="#">Ways to Watch</a></li>
+                        <li><a href="#">Information</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+    
+                </div>
+    
+                <div class="col-lg-2 col-md-3 col-sm-3 col-6 m3 m4">
+    
+                    <ul>
+                        <li style="font-weight: 700;"><a href="">Download App</a></li>
+                        <div class="d-flex flex-column gap-1">
+                            <li><a href="#"><img src="assets/images/Hero/app-store.png" class="playstore" alt=""></a></li>
+                            <li><a href="#"><img src="assets/images/Hero/google-play.png" class="playstore" alt=""></a></li>
+                        </div>
+                    </ul>
+    
+                </div> 
+            </div>
+    
+    
+        </div>
+    
+        <footer>
+            <span>Copyright 2024 All Rights Reserved to HrzFlix</span>
+        </footer>
+    </div>
+
+  
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function(){
+    document.getElementById('preloader').style.display = 'none';
+    document.getElementById('whole-content').style.display = 'block';
+});
+
+
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        responsiveClass: true,
+        margin: 7,
+        center:true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+        
+        responsive: {
+            0: {
+                items: 3,
+                nav: false
+            },
+            600: {
+                items: 4,
+                nav: false
+            },
+            1000: {
+                items: 5,
+                nav: false
+            }
+        },
+       
+    })
+</script>
+
+</body>
+
+
+</html>

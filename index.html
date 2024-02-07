@@ -1,0 +1,1706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+    integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+    integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.theme.default.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+  <title>Portfolio</title>
+<link rel="icon" href="assets/images/harris_logo2.jpg">
+
+
+  <style>
+    .progress .progress-bar,
+    .progress .progress-left .progress-bar,
+    .progress .progress-right .progress-bar {
+      /* Existing styles */
+      will-change: transform;
+    }
+
+
+    .progress {
+      width: 150px;
+      height: 150px;
+      line-height: 150px;
+      background: none;
+      margin: 0 auto;
+      box-shadow: none;
+      position: relative;
+    }
+
+    .progress:after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 12px solid #fff;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .progress>span {
+      width: 50%;
+      height: 100%;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      z-index: 1;
+    }
+
+    .progress .progress-left {
+      left: 0;
+    }
+
+    .progress .progress-bar {
+      width: 100%;
+      height: 100%;
+      background: none;
+      border-width: 12px;
+      border-style: solid;
+      position: absolute;
+      top: 0;
+    }
+
+    .progress .progress-left .progress-bar {
+      left: 100%;
+      border-top-right-radius: 80px;
+      border-bottom-right-radius: 80px;
+      border-left: 0;
+      -webkit-transform-origin: center left;
+      transform-origin: center left;
+    }
+
+    .progress .progress-right {
+      right: 0;
+    }
+
+    .progress .progress-right .progress-bar {
+      left: -100%;
+      border-top-left-radius: 80px;
+      border-bottom-left-radius: 80px;
+      border-right: 0;
+      -webkit-transform-origin: center right;
+      transform-origin: center right;
+      animation: loading-1 1.8s linear forwards;
+    }
+
+    .progress .progress-value {
+      width: 90%;
+      height: 90%;
+      border-radius: 50%;
+      background: #44484b;
+      font-size: 24px;
+      color: #fff;
+      line-height: 135px;
+      text-align: center;
+      position: absolute;
+      top: 5%;
+      left: 5%;
+    }
+
+    .progress.blue .progress-bar {
+      border-color: #001aff;
+    }
+
+    .progress.blue .progress-left .progress-bar {
+      animation: loading-2 1.5s linear forwards 1.8s;
+    }
+
+    .progress.purple .progress-bar {
+      border-color: #6304fd;
+    }
+
+    .progress.purple .progress-left .progress-bar {
+      animation: loading-3 1.5s linear forwards 1.8s;
+    }
+
+    .progress.orange .progress-bar {
+      border-color: #ff5f20;
+    }
+
+    .progress.orange .progress-left .progress-bar {
+      animation: loading-4 0.8s linear forwards 1.8s;
+    }
+
+    .progress.yellow .progress-bar {
+      border-color: #fff12c;
+    }
+
+    .progress.yellow .progress-left .progress-bar {
+      animation: loading-5 1.5s linear forwards 1.8s;
+    }
+
+    .progress.sky .progress-bar {
+      border-color: #049dff;
+    }
+
+    .progress.sky .progress-left .progress-bar {
+      animation: loading-6 1.5s linear forwards 1.8s;
+    }
+
+    .progress.ps .progress-bar {
+      border-color: #082541;
+    }
+
+    .progress.ps .progress-left .progress-bar {
+      animation: loading-7 1.5s linear forwards 1.8s;
+    }
+
+    .progress.git .progress-bar {
+      border-color: #000000;
+    }
+
+    .progress.git .progress-left .progress-bar {
+      animation: loading-8 1.5s linear forwards 1.8s;
+    }
+
+    .progress.query .progress-left .progress-bar {
+      animation: loading-6 1.5s linear forwards 1.8s;
+    }
+
+    .progress.query .progress-bar {
+      border-color: #004b92;
+    }
+
+    @keyframes loading-1 {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg) scale(1);
+      }
+
+      100% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg) scale(1);
+      }
+    }
+
+    @keyframes loading-2 {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg) scale(1);
+      }
+
+      100% {
+        -webkit-transform: rotate(124deg);
+        transform: rotate(124deg) scale(1);
+      }
+    }
+
+    @keyframes loading-3 {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg) scale(1);
+      }
+
+      100% {
+        -webkit-transform: rotate(160deg);
+        transform: rotate(160deg) scale(1);
+      }
+    }
+
+    @keyframes loading-4 {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg) scale(1);
+      }
+
+      100% {
+        -webkit-transform: rotate(156deg);
+        transform: rotate(156deg) scale(1);
+      }
+    }
+
+    @keyframes loading-5 {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg) scale(1);
+      }
+
+      100% {
+        -webkit-transform: rotate(80deg);
+        transform: rotate(80deg) scale(1);
+      }
+    }
+
+    @keyframes loading-6 {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg) scale(1);
+      }
+
+      100% {
+        -webkit-transform: rotate(70deg);
+        transform: rotate(70deg) scale(1);
+      }
+    }
+
+    @keyframes loading-7 {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg) scale(1);
+      }
+
+      100% {
+        -webkit-transform: rotate(85deg);
+        transform: rotate(85deg) scale(1);
+      }
+    }
+
+    @keyframes loading-8 {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg) scale(1);
+      }
+
+      100% {
+        -webkit-transform: rotate(75deg);
+        transform: rotate(75deg) scale(1);
+      }
+    }
+
+    @keyframes loading-9 {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg) scale(1);
+      }
+
+      100% {
+        -webkit-transform: rotate(80deg);
+        transform: rotate(80deg) scale(1);
+      }
+    }
+
+
+
+    @media only screen and (max-width: 990px) {
+      .progress {
+        margin-bottom: 20px;
+      }
+    }
+
+
+    .progressCard {
+      background: rgba(255, 255, 255, 0.048);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.082);
+      padding: 20px;
+    }
+
+    @media (min-width:1300px) {
+
+      .progressCard {
+        background: rgba(255, 255, 255, 0.048);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.082);
+      }
+
+
+      .progress {
+        width: 120px;
+        height: 120px;
+        line-height: 120px;
+        background: none;
+        margin: 0 auto;
+        box-shadow: none;
+        position: relative;
+      }
+
+      .progress:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 12px solid #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .progress>span {
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+      }
+
+      .progress .progress-left {
+        left: 0;
+      }
+
+      .progress .progress-bar {
+        width: 100%;
+        height: 100%;
+        background: none;
+        border-width: 12px;
+        border-style: solid;
+        position: absolute;
+        top: 0;
+      }
+
+      .progress .progress-left .progress-bar {
+        left: 100%;
+        border-top-right-radius: 80px;
+        border-bottom-right-radius: 80px;
+        border-left: 0;
+        -webkit-transform-origin: center left;
+        transform-origin: center left;
+      }
+
+      .progress .progress-right {
+        right: 0;
+      }
+
+      .progress .progress-right .progress-bar {
+        left: -100%;
+        border-top-left-radius: 80px;
+        border-bottom-left-radius: 80px;
+        border-right: 0;
+        -webkit-transform-origin: center right;
+        transform-origin: center right;
+        animation: loading-1 1.8s linear forwards;
+      }
+
+      .progress .progress-value {
+        width: 90%;
+        height: 90%;
+        border-radius: 50%;
+        background: #44484b;
+        font-size: 24px;
+        color: #fff;
+        line-height: 115px;
+        text-align: center;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+      }
+
+      .progressCard h4 {
+        font-size: 1rem;
+      }
+    }
+
+
+
+    @media (max-width:1300px) {
+
+      .progressCard {
+        background: rgba(255, 255, 255, 0.048);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.082);
+      }
+
+
+      .progress {
+        width: 120px;
+        height: 120px;
+        line-height: 120px;
+        background: none;
+        margin: 0 auto;
+        box-shadow: none;
+        position: relative;
+      }
+
+      .progress:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 12px solid #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .progress>span {
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+      }
+
+      .progress .progress-left {
+        left: 0;
+      }
+
+      .progress .progress-bar {
+        width: 100%;
+        height: 100%;
+        background: none;
+        border-width: 12px;
+        border-style: solid;
+        position: absolute;
+        top: 0;
+      }
+
+      .progress .progress-left .progress-bar {
+        left: 100%;
+        border-top-right-radius: 80px;
+        border-bottom-right-radius: 80px;
+        border-left: 0;
+        -webkit-transform-origin: center left;
+        transform-origin: center left;
+      }
+
+      .progress .progress-right {
+        right: 0;
+      }
+
+      .progress .progress-right .progress-bar {
+        left: -100%;
+        border-top-left-radius: 80px;
+        border-bottom-left-radius: 80px;
+        border-right: 0;
+        -webkit-transform-origin: center right;
+        transform-origin: center right;
+        animation: loading-1 1.8s linear forwards;
+      }
+
+      .progress .progress-value {
+        width: 90%;
+        height: 90%;
+        border-radius: 50%;
+        background: #44484b;
+        font-size: 24px;
+        color: #fff;
+        line-height: 115px;
+        text-align: center;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+      }
+
+      .progressCard h4 {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width:1200px) {
+
+      .card {
+        background: rgba(255, 255, 255, 0.048);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.082);
+      }
+
+
+      .progress {
+        width: 110px;
+        height: 110px;
+        line-height: 110px;
+        background: none;
+        margin: 0 auto;
+        box-shadow: none;
+        position: relative;
+      }
+
+      .progress:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 12px solid #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .progress>span {
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+      }
+
+      .progress .progress-left {
+        left: 0;
+      }
+
+      .progress .progress-bar {
+        width: 100%;
+        height: 100%;
+        background: none;
+        border-width: 12px;
+        border-style: solid;
+        position: absolute;
+        top: 0;
+      }
+
+      .progress .progress-left .progress-bar {
+        left: 100%;
+        border-top-right-radius: 80px;
+        border-bottom-right-radius: 80px;
+        border-left: 0;
+        -webkit-transform-origin: center left;
+        transform-origin: center left;
+      }
+
+      .progress .progress-right {
+        right: 0;
+      }
+
+      .progress .progress-right .progress-bar {
+        left: -100%;
+        border-top-left-radius: 80px;
+        border-bottom-left-radius: 80px;
+        border-right: 0;
+        -webkit-transform-origin: center right;
+        transform-origin: center right;
+        animation: loading-1 1.8s linear forwards;
+      }
+
+      .progress .progress-value {
+        width: 90%;
+        height: 90%;
+        border-radius: 50%;
+        background: #44484b;
+        font-size: 20px;
+        color: #fff;
+        line-height: 95px;
+        text-align: center;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+      }
+
+      .progressCard h4 {
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width:768px) {
+      .progress {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        background: none;
+        margin: 0 auto;
+        box-shadow: none;
+        position: relative;
+      }
+
+      .progress:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 12px solid #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .progress>span {
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+      }
+
+      .progress .progress-left {
+        left: 0;
+      }
+
+      .progress .progress-bar {
+        width: 100%;
+        height: 100%;
+        background: none;
+        border-width: 12px;
+        border-style: solid;
+        position: absolute;
+        top: 0;
+      }
+
+      .progress .progress-left .progress-bar {
+        left: 100%;
+        border-top-right-radius: 80px;
+        border-bottom-right-radius: 80px;
+        border-left: 0;
+        -webkit-transform-origin: center left;
+        transform-origin: center left;
+      }
+
+      .progress .progress-right {
+        right: 0;
+      }
+
+      .progress .progress-right .progress-bar {
+        left: -100%;
+        border-top-left-radius: 80px;
+        border-bottom-left-radius: 80px;
+        border-right: 0;
+        -webkit-transform-origin: center right;
+        transform-origin: center right;
+        animation: loading-1 1.8s linear forwards;
+      }
+
+      .progress .progress-value {
+        width: 90%;
+        height: 90%;
+        border-radius: 50%;
+        background: #44484b;
+        font-size: 20px;
+        color: #fff;
+        line-height: 100px;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        left: 5%;
+      }
+
+      .progressCard h4 {
+        font-size: 0.9rem;
+      }
+    }
+
+
+    @media (max-width:425px) {
+      .progress {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        background: none;
+        margin: 0 auto;
+        box-shadow: none;
+        position: relative;
+      }
+
+      .progress:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 12px solid #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .progress>span {
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+      }
+
+      .progress .progress-left {
+        left: 0;
+      }
+
+      .progress .progress-bar {
+        width: 100%;
+        height: 100%;
+        background: none;
+        border-width: 12px;
+        border-style: solid;
+        position: absolute;
+        top: 0;
+      }
+
+      .progress .progress-left .progress-bar {
+        left: 100%;
+        border-top-right-radius: 80px;
+        border-bottom-right-radius: 80px;
+        border-left: 0;
+        -webkit-transform-origin: center left;
+        transform-origin: center left;
+      }
+
+      .progress .progress-right {
+        right: 0;
+      }
+
+      .progress .progress-right .progress-bar {
+        left: -100%;
+        border-top-left-radius: 80px;
+        border-bottom-left-radius: 80px;
+        border-right: 0;
+        -webkit-transform-origin: center right;
+        transform-origin: center right;
+        animation: loading-1 1.8s linear forwards;
+      }
+
+      .progress .progress-value {
+        width: 90%;
+        height: 90%;
+        border-radius: 50%;
+        background: #44484b;
+        font-size: 20px;
+        color: #fff;
+        line-height: 100px;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        left: 5%;
+      }
+
+      .progressCard h4 {
+        font-size: 0.9rem;
+      }
+    }
+
+    .owl-carousel .owl-nav {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 100%;
+    }
+
+
+    .owl-carousel .owl-prev {
+      position: absolute;
+      left: -10px;
+      color: white !important;
+    }
+
+    .owl-carousel .owl-next {
+      position: absolute;
+      right: -10px;
+      color: white !important;
+    }
+  </style>
+</head>
+
+<body style="overflow-x: hidden;">
+  <div class="preloader-container" id="preloader">
+    <div class="loader"></div>
+  </div>
+
+<div id="whole-content" style="display: none;">
+
+    <!-- Navigation -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark " id="nab">
+    <div class="container-fluid">
+
+
+      <a href="" class="navbar-brand" style="font-size:xx-large; font-weight: 600;"> <span
+          style="color: #7a8efc;">H</span>ar<span style="color: #7a8efc;">R</span>iz</a>
+
+      <button class="navbar-toggler border-0 shadow-none" data-bs-toggle="collapse" data-bs-target="#nav"
+        type="button">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse " id="nav">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item active">
+            <a href="#" class="nav-link navLink"><i class="fa-solid fa-house pe-1"></i>Home</a>
+
+          </li>
+
+
+          <li class="nav-item  ">
+            <a href="#about" class="nav-link navLink"><i class="fa-solid fa-circle-user pe-1"></i>About</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#project" class="nav-link navLink"><i class="fa-solid fa-diagram-project pe-1"></i>Projects</a>
+          </li>
+
+
+          <li class="nav-item">
+            <a href="#contact" class="nav-link navLink"><i class="fa-solid fa-phone pe-1"></i>Contact Me</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!-- navigation ends -->
+
+
+  <!-- Home page -->
+
+  <div class="container-fluid">
+    <div class="row hero-container">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12  ">
+        <div class="home">
+          <h4 class="home-title">Hello my name is <span class="hh">Mohammed Harris</span></h4>
+          <h2>I'm a <span class="typing"></span></h2>
+
+          <span class="home2" style="font-weight: 600;">Passionate Frontend Developer | Transforming into Seamless and
+            Visually Stunning Web Solutions </span><br>
+          <div class="btns d-flex">
+            <a href="#about" class="btn mt-2 menu-btn2 shadow-none ">About Me</a>
+            <a href="assets/Resume (Mohammed Harish).pdf" download="Resume (Mohammed Harish).pdf"
+              class="btn mt-2 menu-btn shadow-none ">Download CV</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6  col-md-6 col-sm-12 col-12 hero-img ">
+
+        <div class="hero-content">
+          <div class="tech-icons">
+            <div class="tech-icon">
+              <img src="assets/css/assets/react-icon.png" alt="">
+            </div>
+            <div class="tech-icon">
+              <img src="assets/css/assets/github-icon.png" alt="">
+            </div>
+            <div class="tech-icon">
+              <img src="assets/css/assets/ps-icon.png" alt="">
+            </div>
+          </div>
+          <div class="main-img-container">
+            <img src="assets/images/harris_logo2.jpg" class="img-fluid main-img" alt="">
+          </div>
+        </div>
+
+        <center>
+          <div class="d-flex tech">
+            <div class="tech-icon">
+              <img src="assets/css/assets/boot-icon.png" alt="">
+            </div>
+            <div class="tech-icon">
+              <img src="assets/css/assets/html-icon.png" alt="">
+            </div>
+            <div class="tech-icon">
+              <img src="assets/css/assets/css-icon.png" style="width: 50px; " alt="">
+            </div>
+            <div class="tech-icon">
+              <img src="assets/css/assets/js-icon.jpg" alt="">
+            </div>
+            <div class="tech-icon">
+              <img src="assets/css/assets/jquery-icon.jpg" alt="">
+            </div>
+          </div>
+        </center>
+      </div>
+    </div>
+  </div>
+
+  <!-- Home page Ends-->
+
+
+  <br id="about">
+
+  <!-- about starts -->
+
+  <div class="topic container">
+    <span class="text-white">About Me</span>
+  </div>
+
+  <div class="container about-container mt-4">
+
+    <ul class="nav nav-pills mb-3 gap-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active  tab-btn" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+          type="button" role="tab" aria-controls="pills-home" aria-selected="true">Personal Info</button>
+      </li>
+
+      <li class="nav-item" role="presentation">
+        <button class="nav-link tab-btn" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+          type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Certificates</button>
+      </li>
+
+      <li class="nav-item" role="presentation">
+        <button class="nav-link  tab-btn" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+          type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Skills</button>
+      </li>
+
+
+    </ul>
+    <div class="tab-content mt-4" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+        tabindex="0">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <div class="card aboutCard personal">
+              <ul class="about-content">
+                <li>
+                  <h2>Personal Info</h2>
+                </li>
+                <li>Name <span class="about2">: Mohammed Harris</span></li>
+                <li>DOB <span class="about2">: 28/07/2004</span></li>
+                <li>Age <span class="about2">: 19</span></li>
+                <li>Address <span class="about2">: Trichy, Tamilnadu</span></li>
+                <li>Study <span class="about2">: Jamal Mohammed College</span></li>
+                <li>Degree <span class="about2">: BCA</span></li>
+                <li>Role <span class="about2">: Front End Developer</span></li>
+
+                <div class="d-flex social">
+                  <li>
+                    <a class="about2" href="https://www.facebook.com/profile.php?id=100069883277927"><i
+                        class="fa-brands  pe-2 fa-l fa-facebook"></i></a>
+                  </li>
+                  <li>
+
+                    <a class="about2" href="https://www.instagram.com/_harris_2807?igsh=MTVyb3NyNG9xaDVuZQ=="> <i
+                        class="fa-brands fa-l pe-2 fa-instagram"></i></a>
+                  <li>
+
+                    <a class="about2" href="https://api.whatsapp.com/send?phone=9840989573"> <i
+                        class="fa-brands fa-l pe-2 fa-whatsapp"></i> </a>
+                  </li>
+                  <li>
+
+                    <a class="about2" href="https://github.com/MohammedHarish2004"><i
+                        class="fa-brands fa-l pe-2 fa-github"></i> </a>
+                  </li>
+                  <li>
+
+                    <a class="about2" href="https://www.youtube.com/@AllMightyOfficial"><i
+                        class="fa-brands fa-l pe-2 fa-youtube"></i></a>
+                  </li>
+                  <li>
+
+                    <a class="about2"
+                      href="https://www.linkedin.com/in/mohammed-harris-8967842a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                        class="fa-brands fa-l fa-linkedin"></i></a>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-12">
+            <div class="aboutCard about-expereince">
+              <div class="row">
+
+                <div class="d-flex gap-4 justify-content-center text-center">
+                  <div class="d-flex flex-column gap-4">
+                    <div class="progressCard">
+                      <i class="fa-solid fa-xl pb-4 fa-ranking-star experiences"></i>
+                      <h3 class="card-title text-center experience-no">1</h3>
+                      <p class="card-text text-center experience-text">Year of experience</p>
+                    </div>
+
+                    <div class="progressCard">
+                      <i class="fa-solid fa-xl pb-4 fa-diagram-project experiences"></i>
+                      <h3 class="card-title  text-center  experience-no">8</h3>
+                      <p class="card-text  text-center  experience-text">Completed Projects</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex flex-column gap-4">
+                    <div class="progressCard">
+                      <i class="fa-solid fa-xl pb-4 fa-face-laugh-beam experiences"></i>
+                      <h3 class="card-title text-center experience-no">5</h3>
+                      <p class="card-text text-center experience-text">Happy Costumers</p>
+                    </div>
+
+                    <div class="progressCard">
+                      <i class="fa-solid fa-xl pb-4 fa-certificate experiences"></i>
+                      <h3 class="card-title text-center experience-no">3</h3>
+                      <p class="card-text text-center experience-text">Certificates Won</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade " id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 mt-3">
+                  <div class="card progressCard">
+                    <div class="progress orange">
+                      <span class="progress-left">
+                        <span class="progress-bar"></span>
+                      </span>
+                      <span class="progress-right">
+                        <span class="progress-bar"></span>
+                      </span>
+                      <div class="progress-value">90%</div>
+                    </div>
+                    <h4 class="text-center text-white mt-2">HTML</h4>
+                  </div>
+                </div>
+
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 mt-3">
+                  <div class="progressCard">
+                    <div class="progress blue">
+                      <span class="progress-left">
+                        <span class="progress-bar"></span>
+                      </span>
+                      <span class="progress-right">
+                        <span class="progress-bar"></span>
+                      </span>
+                      <div class="progress-value">80%</div>
+                    </div>
+                    <h4 class="text-center text-white mt-2">CSS</h4>
+                  </div>
+                </div>
+
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 mt-3">
+                  <div class="progressCard">
+                    <div class="progress purple">
+                      <span class="progress-left">
+                        <span class="progress-bar"></span>
+                      </span>
+                      <span class="progress-right">
+                        <span class="progress-bar"></span>
+                      </span>
+                      <div class="progress-value">95%</div>
+                    </div>
+                    <h4 class="text-center text-white mt-2">BOOTSTRAP</h4>
+                  </div>
+                </div>
+
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 mt-3">
+                  <div class="progressCard">
+                    <div class="progress yellow">
+                      <span class="progress-left">
+                        <span class="progress-bar"></span>
+                      </span>
+                      <span class="progress-right">
+                        <span class="progress-bar"></span>
+                      </span>
+                      <div class="progress-value">70%</div>
+                    </div>
+                    <h4 class="text-center text-white mt-2">JAVA SCRIPT</h4>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row d-flex justify-content-center">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 mt-3 ">
+                  <div class="progressCard">
+                    <div class="progress sky">
+                      <span class="progress-left">
+                        <span class="progress-bar"></span>
+                      </span>
+                      <span class="progress-right">
+                        <span class="progress-bar"></span>
+                      </span>
+                      <div class="progress-value">65%</div>
+                    </div>
+                    <h4 class="text-center text-white mt-2">REACT JS</h4>
+                  </div>
+                </div>
+
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 mt-3">
+                  <div class="progressCard">
+                    <div class="progress ps">
+                      <span class="progress-left">
+                        <span class="progress-bar"></span>
+                      </span>
+                      <span class="progress-right">
+                        <span class="progress-bar"></span>
+                      </span>
+                      <div class="progress-value">85%</div>
+                    </div>
+                    <h4 class="text-center text-white mt-2">PHOTO SHOP</h4>
+                  </div>
+                </div>
+
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 mt-3">
+                  <div class="progressCard">
+                    <div class="progress git">
+                      <span class="progress-left">
+                        <span class="progress-bar"></span>
+                      </span>
+                      <span class="progress-right">
+                        <span class="progress-bar"></span>
+                      </span>
+                      <div class="progress-value">75%</div>
+                    </div>
+                    <h4 class="text-center text-white mt-2">GIT & GITHUB</h4>
+                  </div>
+                </div>
+
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 mt-3">
+                  <div class="progressCard">
+                    <div class="progress query">
+                      <span class="progress-left">
+                        <span class="progress-bar"></span>
+                      </span>
+                      <span class="progress-right">
+                        <span class="progress-bar"></span>
+                      </span>
+                      <div class="progress-value">85%</div>
+                    </div>
+                    <h4 class="text-center text-white mt-2">JQuery</h4>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev skill-btn-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next skill-btn-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+        <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="modal fade" id="imagePopupModal3" tabindex="-1" aria-labelledby="imagePopupModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="assets/css/assets/Harris_Intern.jpg" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row d-flex justify-content-center">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 mt-3 ">
+                  <div class="progressCard">
+                    <img data-bs-toggle="modal" data-bs-target="#imagePopupModal3" src="assets/css/assets/intern.png"
+                      class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="modal fade" id="imagePopupModal" tabindex="-1" aria-labelledby="imagePopupModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="assets/css/assets/Photoshop.jpg" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row d-flex justify-content-center">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 mt-3">
+                  <div class="progressCard">
+                    <a data-bs-toggle="modal" data-bs-target="#imagePopupModal" id="imagePopupTrigger">
+                      <img src="assets/css/assets/photoshop_certi.png" class="img-fluid" alt="">
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="modal fade" id="imagePopupModal2" tabindex="-1" aria-labelledby="imagePopupModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="assets/css/assets/iLife.jpg" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row d-flex justify-content-center">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 mt-3 ">
+                  <div class="progressCard">
+                    <img data-bs-toggle="modal" data-bs-target="#imagePopupModal2" src="assets/css/assets/iLife.jpg"
+                      class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pills-experience" role="tabpanel" aria-labelledby="pills-disabled-tab"
+        tabindex="0">
+        <div class="container mt-2">
+
+          <script>
+            $('.ab2').counterUp({
+              delay: 10,
+              time: 1000
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- about starts Ends-->
+
+  <!-- Projects -->
+  <div id="project" class="topic container">
+    <span class="text-white">Projects</span>
+  </div>
+
+  <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content projectModal">
+        <div class="modal-header">
+          <h1 class="modal-title text-white fs-5" id="exampleModalLabel">Project Details</h1>
+          <button type="button" class="btn-close" style="background-color: white;" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/movie_app.png" alt="" class="img-fluid">
+          <span class="badge bg-light text-dark px-2 me-1">Tech: </span><span class="badge bg-primary">HTML</span>
+          <span class="badge" style="background-color: orange;">CSS</span>
+          <span class="badge" style="background-color: rgb(117, 0, 212);">Bootstrap</span>
+          <span class="badge" style="background-color: rgb(14, 0, 143);">JQuery</span>
+          <div class="modal-text mt-2">
+            <p class="text-white">
+              "Hrzflix: My <strong>Personalized Movie streaming app</strong>, designed with HTML, CSS, and Bootstrap. Seamlessly browse, discover,
+              and enjoy a cinematic experience inspired by Netflix."
+            </p>
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" style="font-weight: 500;"
+            data-bs-dismiss="modal">Close</button>
+          <a href="assets/projects/Movie App/index.html" target="_blank" type="button" class="btn btn-primary" style="font-weight: 500;">View Website <i
+              class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content projectModal">
+        <div class="modal-header">
+          <h1 class="modal-title text-white fs-5" id="exampleModalLabel">Project Details</h1>
+          <button type="button" class="btn-close" style="background-color: white;" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/clone.png" alt="" class="img-fluid">
+          <span class="badge bg-light text-dark px-2 me-1">Tech: </span><span class="badge bg-primary">HTML</span>
+          <span class="badge" style="background-color: orange;">CSS</span>
+          <span class="badge" style="background-color: rgb(117, 0, 212);">Bootstrap</span>
+          <span class="badge" style="background-color: rgb(14, 0, 143);">JQuery</span>
+          <div class="modal-text mt-2">
+            <p class="text-white">
+              "Netflix Clone: Immerse yourself in a familiar streaming experience with HTML, CSS, and Bootstrap. Enjoy
+              seamless navigation, personalized content, and a <strong>sign-in page</strong> for an authentic Netflix-like
+              journey." </p>
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" style="font-weight: 500;"
+            data-bs-dismiss="modal">Close</button>
+          <a type="button" href="assets/projects/Netflix Clone/index.html" target="_blank" class="btn btn-primary" style="font-weight: 500;">View Website <i
+              class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content projectModal">
+        <div class="modal-header">
+          <h1 class="modal-title text-white fs-5" id="exampleModalLabel">Project Details</h1>
+          <button type="button" class="btn-close" style="background-color: white;" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/pizza.png" alt="" class="img-fluid">
+          <span class="badge bg-light text-dark px-2 me-1">Tech: </span><span class="badge bg-primary">HTML</span>
+          <span class="badge" style="background-color: orange;">CSS</span>
+          <span class="badge" style="background-color: rgb(117, 0, 212);">Bootstrap</span>
+          <span class="badge" style="background-color: rgb(14, 0, 143);">JQuery</span>
+          <div class="modal-text mt-2">
+            <p class="text-white">
+              "Petruccio Pizza: Savor the flavors of authenticity in this HTML, CSS, Bootstrap and JQuery driven pizza
+              haven. Created with <strong>Dynamic image slideshow</strong> From a delightful menu to an intuitive <strong>Light & Dark Toggle Mode</strong>, experience a taste of perfection
+              on every click."
+            </p>
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" style="font-weight: 500;"
+            data-bs-dismiss="modal">Close</button>
+          <a type="button" href="assets/projects/Pizza shop website/index.html" target="_blank" class="btn btn-primary" style="font-weight: 500;">View Website <i
+              class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="projectModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content projectModal">
+        <div class="modal-header">
+          <h1 class="modal-title text-white fs-5" id="exampleModalLabel">Project Details</h1>
+          <button type="button" class="btn-close" style="background-color: white;" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/plants.png" alt="" class="img-fluid">
+          <span class="badge bg-light text-dark px-2 me-1">Tech: </span><span class="badge bg-primary">HTML</span>
+          <span class="badge" style="background-color: orange;">CSS</span>
+          <span class="badge" style="background-color: rgb(117, 0, 212);">Bootstrap</span>
+          <span class="badge" style="background-color: rgb(238, 255, 0);color: #000;">Javascript</span>
+          <div class="modal-text mt-2">
+            <p class="text-white">
+              "Greemy Plant Shop: A blooming haven crafted with HTML, CSS, and Bootstrap, offering a serene online space
+              for plant enthusiasts.With dynamic <strong>Theme color changer</strong> Explore a diverse collection."</p>
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" style="font-weight: 500;"
+            data-bs-dismiss="modal">Close</button>
+          <a type="button" href="assets/projects/Bootstrap Plant Shop/index.html" target="_blank" class="btn btn-primary" style="font-weight: 500;">View Website <i
+              class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="projectModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content projectModal">
+        <div class="modal-header">
+          <h1 class="modal-title text-white fs-5" id="exampleModalLabel">Project Details</h1>
+          <button type="button" class="btn-close" style="background-color: white;" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/kumo.png" alt="" class="img-fluid">
+          <span class="badge bg-light text-dark px-2 me-1">Tech: </span><span class="badge bg-primary">HTML</span>
+          <span class="badge" style="background-color: orange;">CSS</span>
+          <span class="badge" style="background-color: rgb(117, 0, 212);">Bootstrap</span>
+          <span class="badge" style="background-color: rgb(238, 255, 0);color: #000;">Javascript</span>
+          <div class="modal-text mt-2">
+            <p class="text-white">
+              "Kumo Shopping: Modern retail with HTML, CSS, Bootstrap, and JavaScript. Sleek design, responsive layout,
+              and an enhanced <strong>Product Description Page with alternate images</strong> for a seamless and immersive online
+              shopping experience."
+            </p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" style="font-weight: 500;"
+            data-bs-dismiss="modal">Close</button>
+          <a type="button"  href="assets/projects/Bootstrap E-Com Project/index.html" target="_blank"  class="btn btn-primary" style="font-weight: 500;">View Website <i
+              class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="owl-carousel mt-5 container project-container">
+    <div class="projectCard">
+      <img src="assets/images/movie_app.png" class="img-fluid" alt="" data-bs-toggle="modal"
+        data-bs-target="#projectModal1">
+    </div>
+    
+    <div class="projectCard">
+      <img src="assets/images/kumo.png" class="img-fluid" alt="" data-bs-toggle="modal" data-bs-target="#projectModal5">
+    </div>
+
+    <div class="projectCard">
+      <img src="assets/images/clone.png" class="img-fluid" alt="" data-bs-toggle="modal"
+        data-bs-target="#projectModal2">
+    </div>
+
+    <div class="projectCard">
+      <img src="assets/images/pizza.png" class="img-fluid" alt="" data-bs-toggle="modal"
+        data-bs-target="#projectModal3">
+    </div>
+
+    <div class="projectCard">
+      <img src="assets/images/plants.png" class="img-fluid" alt="" data-bs-toggle="modal"
+        data-bs-target="#projectModal4">
+    </div>
+
+
+  </div>
+
+  <!-- Projects Ends-->
+
+
+  <!-- contact -->
+  <div id="contact" class="topic container ">
+    <span class="text-white">Contact</span>
+  </div>
+
+  <div class="container contact-container py-3 mt-4">
+    <div class="row d-flex justify-content-center  gap-4">
+      <div class="col-lg-5 col-md-12 col-sm-12 col-12 d-flex flex-column contact-left-wrapper order-lg-1  order-2">
+        <div class="row g-0 d-flex flex-column contact-left-content">
+          <div class="contact-icon">
+            <i class="fa-solid fa-phone fa-xl"></i>
+          </div>
+          <div class="contact-text">
+            <a href="tel:9840989573">
+              <p>+91 9840989573</p>
+            </a>
+          </div>
+        </div>
+        <br>
+
+        <div class="row g-0  d-flex flex-column contact-left-content">
+          <div class="contact-icon">
+            <i class="fa-solid fa-envelope fa-xl"></i>
+          </div>
+          <div class="contact-text">
+            <a href="mailto:mohammedharris2807@gmail.com">
+              <p>mohammedharris2807@gmail.com</p>
+            </a>
+          </div>
+        </div>
+        <br>
+      </div>
+
+
+      <div class="col-lg-6 col-md-12 col-sm-12 col-12 order-lg-2 order-1  mt-1">
+
+        <div class="d-flex flex-column gap-4">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+              <input type="text" class="form-control shadow-none " placeholder="Enter Name*" id="name">
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12 mt-lg-0 mt-4 ">
+              <input type="email" class="form-control shadow-none " placeholder="Enter Email*" id="email">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+              <input type="text" class="form-control shadow-none " placeholder="Enter Subject* " id="sub">
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12 mt-lg-0 mt-4 ">
+              <input type="num" class="form-control shadow-none " placeholder="Enter Phone Number*" id="phone">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row mt-4">
+          <div class="form-group col-lg-12 col-md-12 col-sm-12 col-12">
+            <textarea class="form-control shadow-none " cols="30" id="msg" rows="5"
+              placeholder="Enter Message..."></textarea>
+
+            <div class="col-12 mt-3">
+              <button id="submit" class="btn w-100 contact-btn shadow-none ">Send Message to Whatsapp<i
+                  class="fa-solid fa-share ps-2"></i></button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- contact ends-->
+
+  <!-- footer -->
+  <footer
+    style=" display: flex;justify-content: center;background-color: rgb(8, 14, 49);color: white; padding: 0.4rem;">
+    <span style="font-size: 0.95rem;">Copyright <span id="year"></span> &copy; HarRiz All Rights Reserved</span>
+  </footer>
+
+  <!-- footer End-->
+
+</div>
+  
+
+  <!-- JS files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+    integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.theme.default.min.css">
+
+  <!-- Owl Carousel JS -->
+  <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"
+    integrity="sha512-Zq9o+E00xhhR/7vJ49mxFNJ0KQw1E1TMWkPTxrWcnpfEFDEXgUiwJHIKit93EW/XxE31HSI5GEOW06G6BF1AtA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css"
+    integrity="sha512-O03ntXoVqaGUTAeAmvQ2YSzkCvclZEcPQu1eqloPaHfJ5RuNGiS4l+3duaidD801P50J28EHyonCV06CUlTSag=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script>
+
+document.addEventListener('DOMContentLoaded', function(){
+    document.getElementById('preloader').style.display = 'none';
+    document.getElementById('whole-content').style.display = 'block';
+});
+
+
+    var year = document.getElementById("year")
+    var currenDate = new Date()
+    var currentYear = currenDate.getFullYear()
+    year.innerHTML = currentYear
+    console.log(year);
+
+    $(document).ready(function () {
+
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        responsiveClass: true,
+        margin: 10,
+        center: true,
+        nav: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false
+          },
+          600: {
+            items: 2,
+            nav: true
+          },
+          1000: {
+            items: 2,
+            nav: true
+          }
+        },
+
+        navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"]
+      })
+
+    })
+
+
+    $("#submit").click(function () {
+  var name = $("#name").val();
+  var email = $("#email").val();
+  var sub = $("#sub").val();
+  var phn = $("#phone").val();
+  var msg = $("#msg").val();
+
+  if (name == "") {
+    iziToast.error({
+      title: 'Error',
+      message: 'Enter Your Name',
+      position: 'topRight',
+    });
+  } else if (email == "") {
+    iziToast.error({
+      title: 'Error',
+      message: 'Enter Your Email',
+      position: 'topRight',
+    });
+  } else if (sub == "") {
+    iziToast.error({
+      title: 'Error',
+      message: 'Enter Your Subject',
+      position: 'topRight',
+    });
+  } else if (phn == "") {
+    iziToast.error({
+      title: 'Error',
+      message: 'Enter Your Number',
+      position: 'topRight',
+    });
+  } else {
+    var whatsappMessage = `From Your Portfolio \n\n Name: ${name}\nEmail: ${email}\nSubject: ${sub}\nNumber: ${phn}\nMessage: ${msg}`;
+
+    var whatsappLink = `https://wa.me/9840989573/?text=${encodeURIComponent(whatsappMessage)}`;
+
+    window.location.href = whatsappLink;
+
+    $("#name").val("");
+    $("#email").val("");
+    $("#sub").val("");
+    $("#phone").val("");
+    $("#msg").val("");
+
+
+  }
+});
+
+    $(document).ready(function () {
+
+      $('#imagePopupTrigger').click(function (e) {
+        e.preventDefault();
+        $('#imagePopupModal').modal('show');
+      });
+    });
+  </script>
+</body>
+
+</html>
