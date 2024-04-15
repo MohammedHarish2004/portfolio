@@ -118,7 +118,6 @@ nav{
 
 
 .home{
-    margin-left: 6em;
     display: flex;
     flex-direction: column;
     gap: 20px;
