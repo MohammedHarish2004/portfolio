@@ -267,12 +267,22 @@
                 </li>
                 <li>Name <span class="about2">: Mohammed Harris</span></li>
                 <li>DOB <span class="about2">: 28/07/2004</span></li>
-                <li>Age <span class="about2">: 20</span></li>
+                <li>Age : <span class="about2" id="age"></span></li>
                 <li>Address <span class="about2">: Trichy, Tamilnadu</span></li>
                 <li>Study <span class="about2">: Jamal Mohammed College</span></li>
                 <li>Degree <span class="about2">: BCA</span></li>
-                <li>Role <span class="about2">: Full Stack Developer</span></li>
+                <li>Role <span class="about2">: MERN Stack Developer</span></li>
 
+                <script>
+                  function calculateAge(birthYear) {
+                      const currentYear = new Date().getFullYear();
+                      return currentYear - birthYear;
+                  }
+
+                  const birthYear = 2004; 
+                  document.getElementById('age').textContent = calculateAge(birthYear);
+
+                </script>
                 <div class="d-flex social">
                   <li>
                     <a class="about2" href="https://www.facebook.com/profile.php?id=100069883277927"><i
@@ -316,13 +326,13 @@
                   <div class="d-flex flex-column gap-4">
                     <div class="progressCard">
                       <i class="fa-solid fa-xl pb-4 fa-ranking-star experiences"></i>
-                      <h3 class="card-title text-center experience-no">1</h3>
-                      <p class="card-text text-center experience-text">Year of experience</p>
+                      <h3 class="card-title text-center experience-no">2</h3>
+                      <p class="card-text text-center experience-text">Years of experience</p>
                     </div>
 
                     <div class="progressCard">
                       <i class="fa-solid fa-xl pb-4 fa-diagram-project experiences"></i>
-                      <h3 class="card-title  text-center  experience-no">8</h3>
+                      <h3 class="card-title  text-center  experience-no">10</h3>
                       <p class="card-text  text-center  experience-text">Completed Projects</p>
                     </div>
                   </div>
