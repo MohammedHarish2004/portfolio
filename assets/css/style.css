@@ -160,6 +160,19 @@ nav{
 }
 
 
+@keyframes smoother {
+    0%,100%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(10px);
+    }
+}
+
+.main-img{
+animation: smoother 3s ease-in-out infinite;
+
+}
 
 .hero-img .main-img{
 width: 450px;
@@ -168,7 +181,6 @@ border: 5px solid transparent;
 border-radius: 2rem;
 margin-top: 3em;
 transition: all 0.3s ease !important;
-
 }
 
 @keyframes float {
@@ -424,12 +436,6 @@ transition: all 0.3s ease !important;
     line-height: 2.6rem;
   }
 
-  .social
-  {
-    padding-top: 1rem;
-    gap: .5rem;
-
-  }
   .social a {
     color: white;
   }
@@ -615,7 +621,7 @@ transition: all 0.3s ease !important;
 .skill-container{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     gap: 2rem;
 }
 
@@ -623,7 +629,7 @@ transition: all 0.3s ease !important;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 3rem;
+    gap: 2rem;
     flex-wrap: nowrap;
     cursor: pointer;
 }
@@ -637,6 +643,7 @@ transition: all 0.3s ease !important;
     display: flex;
     flex-direction: column;
     align-items:center;
+    justify-content: center;
     border-radius: 16px;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0);
     border: 1px solid rgba(255, 255, 255, 0.082);
@@ -766,7 +773,7 @@ transition: all 0.3s ease !important;
 .contact-left-content{
     position: relative;
     padding: 3rem 0rem 2rem 0rem;
-    border: 1.5px solid #7a8efc;
+    border: 1.5px solid #616ee7;
     border-radius: 10px;
     gap: 4rem;
     background-color: rgba(255, 255, 255, 0.048);
@@ -812,13 +819,13 @@ transition: all 0.3s ease !important;
 
 .form-control{
     background-color: rgba(255, 255, 255, 0.048) !important;
-    border: 1.5px solid #7a8efc !important;
+    border: 1.5px solid #616ee7 !important;
     color: white !important;
 }
 
 .form-control:focus{
     color: white !important;
-    border: 2.5px solid #7a8efc !important;
+    border: 2px solid #3342c0 !important;
 }
 
 .form-control:active{
@@ -1016,20 +1023,6 @@ position: relative;
     
       .personal{
         line-height: 2.6rem;
-      }
-    
-      .social
-      {
-        padding-top: 1rem;
-        gap: .5rem;
-    
-      }
-      .social a {
-        color: white;
-      }
-    
-      .social .fa-whatsapp:hover{
-        color:rgb(24, 226, 24);
       }
     
       
@@ -1288,20 +1281,6 @@ position: relative;
         line-height: 2.6rem;
     
       }
-    
-      .social{
-        gap: 0.5rem;
-        padding-top: 2rem;
-      }
-
-      .social a {
-        color: white;
-      }
-    
-      .social .fa-whatsapp:hover{
-        color:rgb(24, 226, 24);
-      }
-    
       
     .about-content li{
         color: white;
@@ -1616,21 +1595,7 @@ position: relative;
         line-height: 2.6rem;
     
       }
-    
-      .social{
-        gap: 0.5rem;
-        padding-top: 2rem;
-      }
 
-      .social a {
-        color: white;
-      }
-    
-      .social .fa-whatsapp:hover{
-        color:rgb(24, 226, 24);
-      }
-    
-      
     .about-content li{
         color: white;
         list-style: none;
@@ -1908,20 +1873,6 @@ position: relative;
         line-height: 2.1rem;
     
       }
-    
-      .social{
-        gap: 0.5rem;
-        padding-top: 1.5rem;
-      }
-
-      .social a {
-        color: white;
-      }
-    
-      .social .fa-whatsapp:hover{
-        color:rgb(24, 226, 24);
-      }
-    
       
     .about-content li{
         color: white;
@@ -2150,20 +2101,6 @@ position: relative;
     
       }
     
-      .social{
-        gap: 0.5rem;
-        padding-top: 1rem;
-      }
-
-      .social a {
-        color: white;
-      }
-    
-      .social .fa-whatsapp:hover{
-        color:rgb(24, 226, 24);
-      }
-    
-      
     .about-content li{
         color: white;
         list-style: none;
@@ -2404,20 +2341,6 @@ position: relative;
     
       }
     
-      .social{
-        gap: 0.5rem;
-        padding-top: 1rem;
-      }
-
-      .social a {
-        color: white;
-      }
-    
-      .social .fa-whatsapp:hover{
-        color:rgb(24, 226, 24);
-      }
-    
-      
     .about-content li{
         color: white;
         list-style: none;
