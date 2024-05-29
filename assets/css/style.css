@@ -88,8 +88,6 @@ html{
 nav{
     background: rgba(8, 14, 49, 0.801) !important;
     padding: 0.5rem 0.5rem;
-    position: sticky !important;
-    top:0 !important;
     z-index: 30;
     backdrop-filter: blur(50px);
 }
@@ -498,6 +496,113 @@ left: -100px !important;
 
 
 /* about  ends*/
+
+/* Skill starts */
+
+.skill-container{
+display: flex;
+flex-direction: column;
+gap: 2rem;
+}
+
+.skill-cover{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: nowrap;
+
+}
+
+.skill-img{
+    width: 50px;
+}
+.skill-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.11);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.082);
+    padding: 35px 35px;
+    border-radius: 10px;
+    transition: 0.4s all;
+}
+.skill-content:hover{
+    background-color: #616ee7;
+}
+
+
+@media(max-width:992px){
+    .skill-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.11);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.082);
+        padding: 25px 25px;
+        border-radius: 10px;
+        transition: 0.4s all;
+    }
+}
+
+@media(max-width:768px){
+    .skill-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.11);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.082);
+        padding: 15px 15px;
+        border-radius: 10px;
+        transition: 0.4s all;
+    }
+
+    .skill-img{
+        width: 30px;
+    }
+}
+
+@media(max-width:538px){
+    .skill-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.11);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.082);
+        padding: 10px 10px;
+        border-radius: 10px;
+        transition: 0.4s all;
+    }
+
+    .skill-img{
+        width: 25px;
+    }
+
+    .skill-cover{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    
+    }
+}
+/* Skill ends */
 
 /* Projects Starts */
 
@@ -1479,9 +1584,9 @@ position: relative;
     .about-container::after,
     .about-container::before{
         content: " ";
-        width: 22.125rem;
-        height: 22.125rem;
-        border-radius: 22.125rem;
+        width: 18.125rem;
+        height: 18.125rem;
+        border-radius: 18.125rem;
         background-color: #616ee7;
         position: absolute;
         z-index: -1;
@@ -1803,9 +1908,9 @@ position: relative;
     .about-container::after,
     .about-container::before{
         content: " ";
-        width: 17.125rem;
-        height: 17.125rem;
-        border-radius: 17.125rem;
+        width: 12.125rem;
+        height: 12.125rem;
+        border-radius: 12.125rem;
         background-color: #616ee7;
         position: absolute;
         z-index: -1;
@@ -2065,9 +2170,9 @@ position: relative;
     .about-container::after,
     .about-container::before{
         content: " ";
-        width: 23.125rem;
-        height: 23.125rem;
-        border-radius: 23.125rem;
+        width: 17.125rem;
+        height: 17.125rem;
+        border-radius: 17.125rem;
         background-color: #616ee7;
         position: absolute;
         z-index: -1;
