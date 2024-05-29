@@ -306,7 +306,6 @@ transition: all 0.3s ease !important;
     color:#fff !important;
     background: transparent;
     border: 1px solid #7a8efc;
-    transition: all 0.4s ease !important;
 
 }
 
@@ -339,7 +338,7 @@ transition: all 0.3s ease !important;
 
 .nav-link{
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 500;
     color: #fff;
     position: relative;
@@ -497,24 +496,38 @@ transition: all 0.3s ease !important;
     right: 0rem ;
 }
 
-
-.about-expereince{
-    padding: 3.6rem 3rem;
-}
-
-.experiences{
-    color: #7a8efc;
-}
-
-.experience-text{
-    color: #fff;
-    font-size:1.4rem;
-    font-weight: 600;
-}
-
 .experience-no{
     color: #fff;
 }
+
+.progressCard {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.glass-hover {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: left 0.5s ease;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border-radius: 10px;
+}
+
+.progressCard:hover .glass-hover {
+    left: 0;
+}
+
 
 #carouselExampleControls{
     position: relative;
@@ -1097,22 +1110,39 @@ position: relative;
         bottom: 2rem ;
         right: 0rem ;
     }
+    
+    .progressCard {
+        position: relative;
+        overflow: hidden;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+    
+    .card-content {
+        z-index: 2;
+        position: relative;
+    }
+    
+    .glass-hover {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.2);
+        transition: left 0.5s ease;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 10px;
+    }
+    
+    .progressCard:hover .glass-hover {
+        left: 0;
+    }
 
-    .about-expereince{
-        padding: 3.9rem 3rem;
-    }
-    
-    
-    .experiences{
-        color: #7a8efc;
-    }
-    
-    .experience-text{
-        color: #fff;
-        font-size:1.3rem;
-        font-weight: 600;
-    }
-    
     .experience-no{
         color: #fff;
     }
@@ -1318,14 +1348,6 @@ position: relative;
         font-size: 2.2rem;
     }
 
-    .about-expereince{
-        margin-top: 2rem;
-        text-align: center;
-        justify-content: center;
-    }
-    
-    
-    
     .about-container{
         display: flex;
         flex-direction: column;
@@ -1356,19 +1378,7 @@ position: relative;
         bottom: 2rem ;
         right: 0rem ;
     }
-    
-    
-    .experiences .fa-xl{
-        color: #7a8efc;
 
-    }
-    
-    .experience-text{
-        color: #fff;
-        font-size:1.2rem;
-        font-weight: 600;
-    }
-    
     .experience-no{
         color: #fff;
         font-size:1.3rem;
@@ -1675,14 +1685,6 @@ position: relative;
         color: #7a8efc;
         font-size: 2rem;
     }
-
-    .about-expereince{
-        margin-top: 2rem;
-        text-align: center;
-        justify-content: center;
-    }
-    
-    
     
     .about-container{
         display: flex;
@@ -1713,18 +1715,6 @@ position: relative;
     .about-container::before{
         bottom: 2rem ;
         right: 0rem ;
-    }
-    
-    
-    .experiences .fa-xl{
-        color: #7a8efc;
-
-    }
-    
-    .experience-text{
-        color: #fff;
-        font-size:1rem;
-        font-weight: 600;
     }
     
     .experience-no{
@@ -1999,15 +1989,6 @@ position: relative;
         color: #7a8efc;
         font-size: 1.9rem;
     }
-
-    .about-expereince{
-        margin-top: 2rem;
-        text-align: center;
-        justify-content: center;
-    }
-    
-    
-    
     .about-container{
         display: flex;
         flex-direction: column;
@@ -2038,19 +2019,7 @@ position: relative;
         bottom: -1rem ;
         right: 0rem ;
     }
-    
-    
-    .experiences .fa-xl{
-        color: #7a8efc;
 
-    }
-    
-    .experience-text{
-        color: #fff;
-        font-size:1rem;
-        font-weight: 600;
-    }
-    
     .experience-no{
         color: #fff;
         font-size:1.1rem;
@@ -2262,14 +2231,6 @@ position: relative;
         font-size: 1.8rem;
     }
 
-    .about-expereince{
-        margin-top: 2rem;
-        text-align: center;
-        justify-content: center;
-    }
-    
-    
-    
     .about-container{
         display: flex;
         flex-direction: column;
@@ -2300,19 +2261,7 @@ position: relative;
         bottom: -10rem ;
         right: 0rem ;
     }
-    
-    
-    .experiences .fa-xl{
-        color: #7a8efc;
-
-    }
-    
-    .experience-text{
-        color: #fff;
-        font-size:1rem;
-        font-weight: 600;
-    }
-    
+  
     .experience-no{
         color: #fff;
         font-size:1.1rem;
@@ -2540,14 +2489,6 @@ position: relative;
         font-size: 1.5rem;
     }
 
-    .about-expereince{
-        margin-top: 2rem;
-        text-align: center;
-        justify-content: center;
-    }
-    
-    
-    
     .about-container{
         display: flex;
         flex-direction: column;
@@ -2577,18 +2518,6 @@ position: relative;
     .about-container::before{
         bottom: -10rem ;
         right: 0rem ;
-    }
-    
-    
-    .experiences .fa-xl{
-        color: #7a8efc;
-
-    }
-    
-    .experience-text{
-        color: #fff;
-        font-size:0.8rem;
-        font-weight: 600;
     }
     
     .experience-no{

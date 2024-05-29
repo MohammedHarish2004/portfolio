@@ -71,7 +71,7 @@
 
 
       <a href="" class="navbar-brand" style="font-size:xx-large; font-weight: 600;"> <span
-          style="color: #7a8efc;">H</span>ar<span style="color: #7a8efc;">R</span>is</a>
+          style="color: #7a8efc;">P</span>ort<span style="color: #7a8efc;">F</span>olio</a>
 
       <button class="navbar-toggler border-0 shadow-none d-sm-none d-none" data-bs-toggle="collapse" data-bs-target="#nav"
         type="button">
@@ -81,28 +81,21 @@
       <div class="collapse navbar-collapse " id="nav">
         <ul class="navbar-nav m-auto">
           <li class="nav-item active">
-            <a href="#" class="nav-link navLink"><i class="fa-solid fa-house pe-1"></i>Home</a>
-
+            <a href="#" class="nav-link navLink">Home</a>
           </li>
-
-
           <li class="nav-item  ">
-            <a href="#about" class="nav-link navLink"><i class="fa-solid fa-circle-user pe-1"></i>About</a>
+            <a href="#about" class="nav-link navLink">About</a>
           </li>
-
           <li class="nav-item">
-            <a href="#skills" class="nav-link navLink"><i class="fa-solid fa-certificate pe-1"></i>Skills</a>
+            <a href="#skills" class="nav-link navLink">Skills</a>
           </li>
-
           <li class="nav-item">
-            <a href="#project" class="nav-link navLink"><i class="fa-solid fa-diagram-project pe-1"></i>Projects</a>
+            <a href="#project" class="nav-link navLink">Projects</a>
           </li>
-
           <li class="nav-item">
-            <a href="#contact" class="nav-link navLink"><i class="fa-solid fa-phone pe-1"></i>Contact Me</a>
+            <a href="#contact" class="nav-link navLink">Contact Me</a>
           </li>
         </ul>
-
       </div>
     </div>
   </nav>
@@ -118,7 +111,7 @@
           <h4 class="home-title">Hello my name is <span class="hh">Mohammed Harris</span></h4>
           <h2>I'm a <span class="typing"></span></h2>
 
-          <span class="home2" style="font-weight: 600;">Passionate <span style="color: rgb(0, 216, 0);">M</span><span style="color: rgb(255, 255, 255);">E</span><span style="color: rgb(0, 217, 255);">R</span><span style="color: rgb(179, 255, 0);">N</span> Stack Developer |<br> Ui Designer | 
+          <span class="home2" style="font-weight: 600;">Passionate <span style="color: rgb(0, 216, 0);">M</span><span style="color: rgb(255, 255, 255);">E</span><span style="color: rgb(0, 217, 255);">R</span><span style="color: rgb(179, 255, 0);">N</span> Stack Developer |<br> UI Designer | 
             Creating Stunning Web Solutions </span><br>
           <div class="btns d-flex">
             <a href="#project" class="btn mt-2 menu-btn2 shadow-none ">My Projects</a>
@@ -172,129 +165,105 @@
 
   <!-- Home page Ends-->
 
-
-  <br id="about">
-
   <!-- about starts -->
 
-  <div class="topic container">
+  <section  id="about" class="topic container">
     <span class="text-white">About Me</span>
-  </div>
+  </section>
 
   <div class="container about-container mt-4">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-6 d-none d-md-flex mx-auto">
+        <div class="personal">
+          <img src="assets/images/about.png" alt="" class="img-fluid">
+          
+        </div>
+      </div>
 
-   
-        <div class="row">
-          <div class="col-lg-6 col-md-12">
-            <div class="card aboutCard personal">
-              <ul class="about-content">
-                <li>
-                  <h2>Personal Info</h2>
-                </li>
-                <li>Name <span class="about2">: Mohammed Harris</span></li>
-                <li>DOB <span class="about2">: 28/07/2004</span></li>
-                <li>Age : <span class="about2" id="age"></span></li>
-                <li>Address <span class="about2">: Trichy, Tamilnadu</span></li>
-                <li>Study <span class="about2">: Jamal Mohammed College</span></li>
-                <li>Degree <span class="about2">: BCA</span></li>
-                <li>Role <span class="about2">: MERN Stack Developer</span></li>
-
-                <script>
-                  function calculateAge(birthYear) {
-                      const currentYear = new Date().getFullYear();
-                      return currentYear - birthYear;
-                  }
-
-                  const birthYear = 2004; 
-                  document.getElementById('age').textContent = calculateAge(birthYear);
-
-                </script>
-                <div class="d-flex social">
+      <div class="col-lg-6 col-md-12">
+        <div class=" about-expereince">
+          <div class="row">
+            <div class="d-flex flex-column gap-4 justify-content-center ">
+              <div class="d-flex flex-column gap-4">
+                <div class="progressCard d-flex align-items-center gap-3">
+                  <div>
+                    <i class="fa-solid fa-laptop-code text-white fa-lg"></i>
+                  </div>
+                 <div>
+                   <h5 class="card-title experience-no">Frontend Developer</h5>
+                   <p class="card-text text-white">I'm a front-end developer with experience in building responsive and optimized sites</p>
+                 </div>
+                 <div class="glass-hover"></div>
+                </div>
+                <div class="progressCard d-flex align-items-center gap-3">
+                  <div>
+                    <i class="fa-solid fa-server text-white fa-lg"></i>
+                  </div>
+                 <div>
+                  <h5 class="card-title experience-no">Backend Developer</h5>
+                  <p class="card-text text-white">I have experience developing fast and optimised back-end system and APIs</p>
+                 </div>
+                 <div class="glass-hover"></div>
+                </div>
+                <div class="progressCard d-flex align-items-center gap-3">
+                  <div>
+                    <i class="fa-solid  fa-wand-magic-sparkles text-white fa-lg"></i>
+                  </div>
+                 <div>
+                  <h5 class="card-title experience-no">UI Designer</h5>
+                  <p class="card-text text-white">I have designed multiple posters , pages and crafted designs with figma & photoshop</p>
+                 </div>
+                 <div class="glass-hover"></div>
+                </div>
+              </div>
+              <ul class="about-content ">
+                <div class="d-flex gap-3 social">
                   <li>
-                    <a class="about2" href="https://www.facebook.com/profile.php?id=100069883277927"><i
+                    <a class="about2" href="https://www.facebook.com/profile.php?id=100069883277927" target="_blank"><i
                         class="fa-brands  pe-2 fa-l fa-facebook"></i></a>
                   </li>
                   <li>
-
-                    <a class="about2" href="https://www.instagram.com/_harris_2807?igsh=MTVyb3NyNG9xaDVuZQ=="> <i
+    
+                    <a class="about2" href="https://www.instagram.com/_harris_2807?igsh=MTVyb3NyNG9xaDVuZQ==" target="_blank"> <i
                         class="fa-brands fa-l pe-2 fa-instagram"></i></a>
                   <li>
-
-                    <a class="about2" href="https://api.whatsapp.com/send?phone=9840989573"> <i
+    
+                    <a class="about2" href="https://api.whatsapp.com/send?phone=9840989573" target="_blank"> <i
                         class="fa-brands fa-l pe-2 fa-whatsapp"></i> </a>
                   </li>
                   <li>
-
-                    <a class="about2" href="https://github.com/MohammedHarish2004"><i
+    
+                    <a class="about2" href="https://github.com/MohammedHarish2004" target="_blank"><i
                         class="fa-brands fa-l pe-2 fa-github"></i> </a>
                   </li>
                   <li>
-
-                    <a class="about2" href="https://www.youtube.com/@AllMightyOfficial"><i
+    
+                    <a class="about2" href="https://www.youtube.com/@AllMightyOfficial" target="_blank"><i
                         class="fa-brands fa-l pe-2 fa-youtube"></i></a>
                   </li>
                   <li>
-
+    
                     <a class="about2"
-                      href="https://www.linkedin.com/in/mohammed-harris-8967842a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                      href="https://www.linkedin.com/in/mohammed-harris-8967842a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i
                         class="fa-brands fa-l fa-linkedin"></i></a>
                   </li>
                 </div>
               </ul>
             </div>
           </div>
-
-          <div class="col-lg-6 col-md-12">
-            <div class="aboutCard about-expereince ">
-              <div class="row">
-
-                <div class="d-flex gap-4 justify-content-center text-center">
-                  <div class="d-flex flex-column gap-4">
-                    <div class="progressCard">
-                      <i class="fa-solid fa-xl pb-4 fa-ranking-star experiences"></i>
-                      <h3 class="card-title text-center experience-no">2</h3>
-                      <p class="card-text text-center experience-text">Years of experience</p>
-                    </div>
-
-                    <div class="progressCard">
-                      <i class="fa-solid fa-xl pb-4 fa-diagram-project experiences"></i>
-                      <h3 class="card-title  text-center  experience-no">10</h3>
-                      <p class="card-text  text-center  experience-text">Completed Projects</p>
-                    </div>
-                  </div>
-
-                  <div class="d-flex flex-column gap-4">
-                    <div class="progressCard">
-                      <i class="fa-solid fa-xl pb-4 fa-face-laugh-beam experiences"></i>
-                      <h3 class="card-title text-center experience-no">5</h3>
-                      <p class="card-text text-center experience-text">Happy Customers</p>
-                    </div>
-
-                    <div class="progressCard">
-                      <i class="fa-solid fa-xl pb-4 fa-certificate experiences"></i>
-                      <h3 class="card-title text-center experience-no">3</h3>
-                      <p class="card-text text-center experience-text">Certificates Won</p>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
+      </div>
     </div>
+</div>
     
 
   <!-- about Ends-->
 
-  <br id="skills">
-
-
   <!-- skills starts -->
 
-  <div class="topic container">
+  <section id="skills" class="topic container">
     <span class="text-white">Skills & Certficates</span>
-  </div>
+  </section>
 
   <div class="container about-container mt-4">
 
@@ -309,9 +278,6 @@
         <button class="nav-link tab-btn" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
           type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Certificates</button>
       </li>
-
-
-
     </ul>
     <div class="tab-content mt-4" id="pills-tabContent">
      
@@ -319,55 +285,50 @@
 
        <div class="skill-container">
          <div class="skill-cover">
-          <div class="skill-content">
-            <img src="assets/css/assets/mongo.png" class="skill-img" alt="">
-          </div>
-          <div class="skill-content">
-            <img src="assets/css/assets/exp.png" class="skill-img" alt="">
-          </div>
-          <div class="skill-content">
-            <img src="assets/css/assets/react.png" class="skill-img" alt="">
-          </div>
-          <div class="skill-content">
-            <img src="assets/css/assets/nodejs.png" class="skill-img" alt="">
-          </div>
-         
+            <div class="skill-content">
+              <img src="assets/css/assets/mongo.png" class="skill-img" alt="">
+            </div>
+            <div class="skill-content">
+              <img src="assets/css/assets/exp.png" class="skill-img" alt="">
+            </div>
+            <div class="skill-content">
+              <img src="assets/css/assets/react.png" class="skill-img" alt="">
+            </div>
+            <div class="skill-content">
+              <img src="assets/css/assets/nodejs.png" class="skill-img" alt="">
+            </div>
          </div>
          
          <div class="skill-cover">
-          <div class="skill-content">
-            <img src="assets/css/assets/redux.jpeg" class="skill-img" alt="">
-          </div>
-          <div class="skill-content ">
-            <img src="assets/css/assets/figma-icon.png" class="skill-img" alt="">
-          </div>
-          <div class="skill-content">
-            <img src="assets/css/assets/ps-icon.png" class="skill-img" alt="">
-          </div>
-          <div class="skill-content">
-            <img src="assets/css/assets/firebase.png" class="skill-img" alt="">
-          </div>
-         
-         
+            <div class="skill-content">
+              <img src="assets/css/assets/redux.jpeg" class="skill-img" alt="">
+            </div>
+            <div class="skill-content ">
+              <img src="assets/css/assets/figma-icon.png" class="skill-img" alt="">
+            </div>
+            <div class="skill-content">
+              <img src="assets/css/assets/ps-icon.png" class="skill-img" alt="">
+            </div>
+            <div class="skill-content">
+              <img src="assets/css/assets/firebase.png" class="skill-img" alt="">
+            </div>
          </div>
+
          <div class="skill-cover">
-          <div class="skill-content">
-            <img src="assets/css/assets/github-icon.png" class="skill-img" alt="">
-          </div>
-          <div class="skill-content">
-            <img src="assets/css/assets/render.jpg" class="skill-img" alt="">
-          </div>
-          <div class="skill-content">
-            <img src="assets/css/assets/js-icon.jpg" class="skill-img" alt="">
-          </div>
-          <div class="skill-content">
-            <img src="assets/css/assets/jquery-icon.jpg" class="skill-img" alt="">
-          </div>
-        
-         
+            <div class="skill-content">
+              <img src="assets/css/assets/github-icon.png" class="skill-img" alt="">
+            </div>
+            <div class="skill-content">
+              <img src="assets/css/assets/render.jpg" class="skill-img" alt="">
+            </div>
+            <div class="skill-content">
+              <img src="assets/css/assets/js-icon.jpg" class="skill-img" alt="">
+            </div>
+            <div class="skill-content">
+              <img src="assets/css/assets/jquery-icon.jpg" class="skill-img" alt="">
+            </div>
          </div>
        </div>
-      
       </div>
       <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
         <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
@@ -474,10 +435,11 @@
   </div>
 
   <!-- skills ends -->
+
   <!-- Projects -->
-  <div id="project" class="topic container">
+  <section id="project" class="topic container">
     <span class="text-white">Projects</span>
-  </div>
+  </section>
 
   <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-md">
@@ -740,16 +702,15 @@
         data-bs-target="#projectModal4">
     </div>
 
-
   </div>
 
   <!-- Projects Ends-->
 
 
   <!-- contact -->
-  <div id="contact" class="topic container ">
+  <section id="contact" class="topic container ">
     <span class="text-white">Contact Me</span>
-  </div>
+  </section>
 
   <div class="container contact-container py-3 mt-4">
     <div class="row d-flex justify-content-center  gap-4">
