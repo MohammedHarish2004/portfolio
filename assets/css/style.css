@@ -171,6 +171,47 @@ transition: all 0.3s ease !important;
 
 }
 
+@keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .tech-icon img {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .tech-icons .tech-icon:nth-child(1) img {
+  animation-delay: 0s;
+}
+
+.tech-icons .tech-icon:nth-child(2) img {
+  animation-delay: 0.5s;
+}
+
+.tech-icons .tech-icon:nth-child(3) img {
+  animation-delay: 1s;
+}
+
+.tech-icons .tech-icon:nth-child(4) img {
+  animation-delay: 1.5s;
+}
+
+.tech .tech-icon:nth-child(1) img {
+  animation-delay: 0s;
+}
+
+.tech .tech-icon:nth-child(2) img {
+  animation-delay: 0.5s;
+}
+
+.tech .tech-icon:nth-child(3) img {
+  animation-delay: 1s;
+}
+  
 .tech{
     gap: 2rem;
 }
@@ -494,6 +535,76 @@ left: -100px !important;
     font-weight: 600;
 }
 
+.progressCard {
+    background: rgba(255, 255, 255, 0.048);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.082);
+    padding: 20px;
+  }
+
+  @media (min-width:1300px) {
+
+    .progressCard {
+      background: rgba(255, 255, 255, 0.048);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.082);
+    }
+
+
+    .progressCard h4 {
+      font-size: 1rem;
+    }
+  }
+
+
+
+  @media (max-width:1300px) {
+
+    .progressCard {
+      background: rgba(255, 255, 255, 0.048);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.082);
+    }
+
+
+   
+    .progressCard h4 {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width:1200px) {
+
+  
+    .progressCard h4 {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width:768px) {
+   
+    .progressCard h4 {
+      font-size: 0.9rem;
+    }
+  }
+
+
+  @media (max-width:425px) {
+    
+
+    .progressCard h4 {
+      font-size: 0.9rem;
+    }
+  }
 
 /* about  ends*/
 
@@ -534,6 +645,7 @@ gap: 2rem;
 .skill-content:hover{
     background-color: #616ee7;
 }
+
 
 
 @media(max-width:992px){
